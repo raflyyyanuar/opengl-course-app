@@ -9,6 +9,25 @@
 const GLint SCR_WIDTH = 600;
 const GLint SCR_HEIGHT = 600;
 
+GLuint VAO, VBO, shader;
+
+void createTriangle()
+{
+    GLfloat vertices[] = {
+        -1.f, -1.f, 0.f,
+        1.f, -1.f, 0.f,
+        0.f, 1.f, 0.f,
+    };
+
+    // Create vertex array object
+    // holds many VBO
+    glGenVertexArrays(1, &VAO);
+    glBindVertexArray(VAO);
+    
+    // Create vertex buffer object
+    // defines where the triangles are
+}
+
 int main()
 {
     // Initialize GLFW
